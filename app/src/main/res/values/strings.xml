@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BookInventoryApp</string>
+    <string name="deleteAllMessage">Delete all</string>
+    <string name="saveMessage">Save</string>
+    <string name="itemDeleteMessage">Delete item</string>
+    <string name="bookQuantity">Quantity</string>
+    <string name="bookPrice">Price</string>
+    <string name="bookTitle">Book Title</string>
+    <string name="supplierName">Supplier name</string>
+    <string name="supplierPhoneNumber">Supplier phone no</string>
+    <string name="provideData">Provide data</string>
+    <string name="databaseOutput">The book table contains %1$s books.\n \n</string>
+
+    <string name="toastError">Error with saving book.</string>
+    <string name="toastSuccessful">Book saved with row id:</string>
+
+    <!-- Sample dummy data -->
+    <string name="dummyTitle">Sample title.</string>
+    <string name="dummyQuantity">11</string>
+    <string name="dummyPrice">50</string>
+    <string name="dummySupplier">The Monsters Inc</string>
+    <string name="dummyPhoneNumber">+01 666 999 666</string>
+</resources>
