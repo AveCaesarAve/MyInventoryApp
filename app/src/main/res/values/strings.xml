@@ -1,16 +1,20 @@
 <resources>
     <string name="app_name">BookInventoryApp</string>
+
+    <!-- Stage 1 strings -->
+    <string name="provideData">Add fake data</string>
     <string name="deleteAllMessage">Delete all</string>
     <string name="saveMessage">Save</string>
     <string name="itemDeleteMessage">Delete item</string>
+    <string name="example_text">editText</string>
     <string name="bookQuantity">Quantity</string>
     <string name="bookPrice">Price</string>
     <string name="bookTitle">Book Title</string>
     <string name="supplierName">Supplier name</string>
     <string name="supplierPhoneNumber">Supplier phone no</string>
-    <string name="provideData">Provide data</string>
     <string name="databaseOutput">The book table contains %1$s books.\n \n</string>
 
+    <!-- Toast strings-->
     <string name="toastError">Error with saving book.</string>
     <string name="toastSuccessful">Book saved with row id:</string>
 
@@ -20,4 +24,42 @@
     <string name="dummyPrice">50</string>
     <string name="dummySupplier">The Monsters Inc</string>
     <string name="dummyPhoneNumber">+01 666 999 666</string>
+
+    <!-- No data messages -->
+    <string name="empty_view_title_text">Nothing to see here yet…</string>
+    <string name="empty_view_subtitle_text">To start add a book</string>
+
+    <!-- Actions buttons strings -->
+    <string name="keep_editing">Keep editing</string>
+    <string name="delete_dialog_msg">Do you want delete?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="call_to_supplier">Call to supplier</string>
+    <string name="sale">Sale</string>
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+    <string name="decrease_button">-</string>
+    <string name="increase_button">+</string>
+    <string name="default_quantity">0</string>
+
+    <!-- Edit Activity strings -->
+    <string name="editor_activity_new_book">Add a book</string>
+    <string name="editor_insert_book_success">Book saved</string>
+    <string name="editor_insert_book_failed">Error with saving book</string>
+    <string name="editor_activity_title_edit_book">Edit book</string>
+    <string name="editor_update_book_failed">Update book</string>
+    <string name="editor_update_book_successful">update successful.</string>
+    <string name="editor_delete_book_failed">Deleting failed</string>
+    <string name="editor_delete_book_successful">Deleting successful</string>
+    <string name="quantity_below_zero">Quantity cannot be below 0</string>
+
+    <!-- Error messages -->
+    <string name="error_update">Error in updating</string>
+    <string name="quantity_error">You must insert quantity</string>
+    <string name="title_error">You must put product name!</string>
+    <string name="price_error">Book has to have price</string>
+    <string name="supplier_name_error">Supplier name can\'t be empty</string>
+    <string name="supplier_phone_error">You must put supplier number!</string>
+    <string name="unsaved_changes_dialog_msg">There is unsaved changes. Are you sure you want to quit?</string>
+
 </resources>

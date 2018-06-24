@@ -21,7 +21,6 @@ public class BookDBHelper extends SQLiteOpenHelper{
      * @param context of the app
      */
     public BookDBHelper(Context context) {
-
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

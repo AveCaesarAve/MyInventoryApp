@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
     tools:context=".EditActivity">
 
     <EditText
         android:id="@+id/bookTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        style="@style/EditorFieldStyle"
         android:hint="@string/bookTitle"
-        android:inputType="text"
+        android:inputType="textCapWords"
         app:layout_constraintBottom_toTopOf="@+id/bookPrice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,35 +19,50 @@
 
     <EditText
         android:id="@+id/bookPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        style="@style/EditorFieldStyle"
         android:hint="@string/bookPrice"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/bookQuantity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bookTitle" />
 
-    <EditText
-        android:id="@+id/bookQuantity"
+    <Button
+        android:id="@+id/decrease"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginStart="@dimen/smallMargin"
+        android:text="@string/decrease_button"
+        app:layout_constraintEnd_toStartOf="@+id/bookQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bookQuantity" />
+
+    <EditText
+        android:id="@+id/bookQuantity"
+        style="@style/EditorFieldStyle"
+        android:gravity="center"
         android:hint="@string/bookQuantity"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/bookSupplierName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/increase"
+        app:layout_constraintStart_toEndOf="@+id/decrease"
         app:layout_constraintTop_toBottomOf="@+id/bookPrice" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/smallMargin"
+        android:text="@string/increase_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bookQuantity"
+        app:layout_constraintTop_toTopOf="@+id/bookQuantity" />
 
     <EditText
         android:id="@+id/bookSupplierName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        style="@style/EditorFieldStyle"
         android:hint="@string/supplierName"
-        android:inputType="text"
+        android:inputType="textCapWords"
         app:layout_constraintBottom_toTopOf="@+id/bookSupplierPhoneNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,14 +70,24 @@
 
     <EditText
         android:id="@+id/bookSupplierPhoneNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        style="@style/EditorFieldStyle"
         android:hint="@string/supplierPhoneNumber"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bookSupplierName" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/smallMargin"
+        android:layout_marginStart="@dimen/smallMargin"
+        android:text="@string/call_to_supplier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookSupplierPhoneNumber" />
 
 </android.support.constraint.ConstraintLayout>
